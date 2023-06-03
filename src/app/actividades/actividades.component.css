@@ -1,0 +1,64 @@
+.contenedor {
+    background-color: rgb(35, 34, 34);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .btn-add {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: goldenrod;
+  }
+  
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    margin-bottom: 5px;
+  }
+  
+  .btn-danger {
+    background-color: rgb(75, 75, 75);
+    border-color: goldenrod;
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: rgb(35, 34, 34);
+    border-color: goldenrod;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+  }
+  
+  .btn-success {
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+  }
+  

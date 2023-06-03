@@ -1,0 +1,43 @@
+.contenedor {
+    background-color: rgb(35, 34, 34);
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: goldenrod;
+  }
+  
+  ul, li {
+    color: #fff;
+  }
+  
+  .btn {
+    color: #fff;
+    border-color: goldenrod;
+  }
+  
+  .btn-add {
+    background-color: goldenrod;
+  }
+  
+  .btn-danger {
+    background-color: rgb(75, 75, 75);
+  }
+  
+  .btn-primary {
+    background-color: rgb(35, 34, 34);
+  }
+  
+  .btn-primary:hover {
+    background-color: goldenrod;
+  }
+  
+  .btn-success {
+    background-color: goldenrod;
+  }
+  
+  .btn-success:hover {
+    background-color: goldenrod;
+  }
+  

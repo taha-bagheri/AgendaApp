@@ -1,0 +1,103 @@
+<div class="contenedor">
+    <h1>Estructura de componentes </h1>
+    <h1 style="font-size: 24px;">Componente App</h1>
+Selector: app-root
+Archivos:
+<br>
+- app.component.ts
+<br>
+- app.component.html
+<br>
+- app.component.css
+<br>
+
+<br>
+
+<h2 style="font-size: 20px;">Componente Agenda</h2>
+Selector: app-agenda
+<br>
+Archivos:
+<br>
+- agenda.component.ts
+<br>
+- agenda.component.html
+<br>
+- agenda.component.css
+<br>
+
+<br>
+
+<h2 style="font-size: 20px;">Componente Actividades</h2>
+Selector: app-actividades
+<br>
+Archivos:
+<br>
+- actividades.component.ts
+<br>
+- actividades.component.html
+<br>
+- actividades.component.css
+<br>
+
+<br>
+
+<h2 style="font-size: 20px;">Componente Menú</h2>
+Selector: app-menu
+<br>
+Archivos:
+<br>
+- menu.component.ts
+<br>
+- menu.component.html
+<br>
+- menu.component.css
+
+<br>
+<br>
+
+<h1>Estructura del codigo y llamada a métodos</h1>
+<h2>Agenda</h2>
+El código importa la clase Component y la interfaz OnInit del módulo @angular/core. También define una interfaz llamada Evento con propiedades como id, titulo, descripcion, fecha, horaInicio, horaFin y finalizado. <br>
+<br>
+A continuación, se define un componente llamado AgendaComponent utilizando el decorador @Component. Este componente tiene un selector de app-agenda y utiliza un archivo de plantilla agenda.component.html y un archivo de estilos agenda.component.css. <br>
+<br>
+Dentro de la clase AgendaComponent, se declaran varias propiedades, incluyendo eventos, que es un arreglo de objetos Evento, mostrarForm, que es un booleano para controlar la visibilidad del formulario de eventos, y nuevoEvento, que es un objeto Evento utilizado para agregar o editar eventos. <br>
+<br>
+El componente implementa la interfaz OnInit, por lo que tiene un método ngOnInit que se invoca al inicializar el componente. Dentro de este método, se llama a la función recuperarEventos para cargar los eventos almacenados en el almacenamiento local. <br>
+<br>
+El componente también tiene varios métodos, como mostrarFormulario, que establece la propiedad mostrarForm en true para mostrar el formulario de eventos, agregarEvento, que agrega o edita un evento dependiendo del valor de nuevoEvento.id, y guarda los eventos en el almacenamiento local. El método editarEvento se utiliza para editar un evento existente, mientras que marcarFinalizado cambia el estado de finalizado de un evento y actualiza el almacenamiento local. El método borrarEvento elimina un evento del arreglo de eventos y actualiza el almacenamiento local. <br>
+<br>
+El componente también tiene métodos como ordenarEventos, que ordena los eventos por fecha y hora, guardarEventos, que guarda los eventos en el almacenamiento local, y recuperarEventos, que recupera los eventos almacenados del almacenamiento local. <br>
+<br>
+Por último, el componente tiene el método obtenerNuevoId, que se utiliza para obtener un nuevo ID para un evento agregado. <br>
+<br>
+En resumen, el código define un componente de Agenda que gestiona eventos. Permite agregar, editar, eliminar y marcar eventos como finalizados o no finalizados, y almacena los eventos en el almacenamiento local para persistencia de datos.
+<br>
+<br>
+<h2>Actividades</h2>
+El código importa la clase Component y la interfaz OnInit del módulo @angular/core. También se define una interfaz llamada Evento con propiedades como id, titulo, descripcion, fecha, horaInicio, horaFin y finalizado. <br>
+<br>
+A continuación, se define un componente llamado ActividadesComponent utilizando el decorador @Component. Este componente tiene un selector de app-actividades y utiliza un archivo de plantilla actividades.component.html y un archivo de estilos actividades.component.css. <br>
+<br>
+Dentro de la clase ActividadesComponent, se declaran varias propiedades, incluyendo eventos, eventosNoFinalizados y eventosFinalizados, que son arreglos de objetos Evento. Estas propiedades se utilizan para organizar y mostrar los eventos en diferentes listas según su estado de finalización. También se declaran las propiedades mostrarForm y nuevoEvento para controlar la visibilidad del formulario de eventos y agregar/editar eventos respectivamente. <br>
+<br>
+El componente implementa la interfaz OnInit, lo que significa que tiene un método ngOnInit que se invoca al inicializar el componente. Dentro de este método, se llama a la función recuperarEventos para cargar los eventos almacenados en el almacenamiento local. <br>
+<br>
+El componente también tiene varios métodos, como mostrarFormulario, que establece la propiedad mostrarForm en true para mostrar el formulario de eventos, agregarEvento, que agrega o edita un evento dependiendo del valor de nuevoEvento.id, y guarda los eventos en el almacenamiento local. El método editarEvento se utiliza para editar un evento existente, mientras que marcarFinalizado cambia el estado de finalizado de un evento y actualiza el almacenamiento local y las listas de eventos. El método borrarEvento elimina un evento del arreglo de eventos, actualiza el almacenamiento local y las listas de eventos. <br>
+<br>
+El componente también tiene métodos como ordenarEventos, que ordena los eventos por fecha y hora, guardarEventos, que guarda los eventos en el almacenamiento local, recuperarEventos, que recupera los eventos almacenados del almacenamiento local, y actualizarListas, que actualiza las listas de eventos no finalizados y finalizados en base al estado de finalización de los eventos. <br>
+<br>
+Por último, el componente tiene el método obtenerNuevoId, que se utiliza para obtener un nuevo ID para un evento agregado, y el método actualizarLocalStorage, que actualiza el almacenamiento local con la lista de eventos actualizada. <br>
+<br>
+En resumen, este código define un componente de Actividades en Angular que gestiona eventos y los organiza en listas según su estado de finalización. Permite agregar, editar, eliminar y marcar eventos como finalizados o no finalizados, y utiliza el almacenamiento local para almacenar y recuperar los eventos para una persistencia de datos.
+<h1>Documentacion</h1>
+Sin mucho que explicar, este ocumento donde se explica el resto de la actividad
+<br>
+<br>
+<br>
+<h1>Complicaciones y soluciones</h1>
+<h3>La actividad no ha tenido muchas complicacaiones, si acaso el enrutamiento que con un poco de practica y prueba y error se puede sacar</h3>
+</div>
+
+
+
